@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="MPSServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10.251.10.21</Value>
+    </Setting>
+    <Setting Name="MPSUsuario" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+    <Setting Name="MPSContraseña" Type="System.String" Scope="User">
+      <Value Profile="(Default)">martinrea</Value>
+    </Setting>
+    <Setting Name="MPSBD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MarsTest</Value>
+    </Setting>
+    <Setting Name="CB_CODIGO" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3205</Value>
+    </Setting>
+    <Setting Name="UPGRADEREQUIRED" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TRUE</Value>
+    </Setting>
+    <Setting Name="Usuario" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
