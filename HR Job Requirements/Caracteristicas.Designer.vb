@@ -22,95 +22,21 @@ Partial Class Caracteristicas
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.btn_Competencias = New System.Windows.Forms.Button()
-        Me.btn_Habilidades = New System.Windows.Forms.Button()
-        Me.Btn_conocimiento = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Com_fil_dos = New System.Windows.Forms.ComboBox()
-        Me.Com_fil_uno = New System.Windows.Forms.ComboBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btn_curso = New System.Windows.Forms.Button()
+        Me.btn_Competencias = New System.Windows.Forms.Button()
+        Me.btn_Habilidades = New System.Windows.Forms.Button()
+        Me.Btn_conocimiento = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'btn_Competencias
-        '
-        Me.btn_Competencias.Location = New System.Drawing.Point(16, 19)
-        Me.btn_Competencias.Name = "btn_Competencias"
-        Me.btn_Competencias.Size = New System.Drawing.Size(121, 98)
-        Me.btn_Competencias.TabIndex = 1
-        Me.btn_Competencias.Text = "Competencias"
-        Me.btn_Competencias.UseVisualStyleBackColor = True
-        '
-        'btn_Habilidades
-        '
-        Me.btn_Habilidades.Location = New System.Drawing.Point(167, 19)
-        Me.btn_Habilidades.Name = "btn_Habilidades"
-        Me.btn_Habilidades.Size = New System.Drawing.Size(121, 98)
-        Me.btn_Habilidades.TabIndex = 2
-        Me.btn_Habilidades.Text = "Habilidades"
-        Me.btn_Habilidades.UseVisualStyleBackColor = True
-        '
-        'Btn_conocimiento
-        '
-        Me.Btn_conocimiento.Location = New System.Drawing.Point(318, 19)
-        Me.Btn_conocimiento.Name = "Btn_conocimiento"
-        Me.Btn_conocimiento.Size = New System.Drawing.Size(121, 98)
-        Me.Btn_conocimiento.TabIndex = 3
-        Me.Btn_conocimiento.Text = "Conocimiento"
-        Me.Btn_conocimiento.UseVisualStyleBackColor = True
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.HR_Job_Requirements.My.Resources.Resources.filter_4922
-        Me.PictureBox1.Location = New System.Drawing.Point(516, 13)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(52, 62)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 5
-        Me.PictureBox1.TabStop = False
-        '
-        'Button4
-        '
-        Me.Button4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button4.BackgroundImage = Global.HR_Job_Requirements.My.Resources.Resources.icons8_plus_math_32
-        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Location = New System.Drawing.Point(1122, 40)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(42, 35)
-        Me.Button4.TabIndex = 3
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Com_fil_dos
-        '
-        Me.Com_fil_dos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Com_fil_dos.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Com_fil_dos.FormattingEnabled = True
-        Me.Com_fil_dos.Location = New System.Drawing.Point(574, 49)
-        Me.Com_fil_dos.Name = "Com_fil_dos"
-        Me.Com_fil_dos.Size = New System.Drawing.Size(199, 26)
-        Me.Com_fil_dos.TabIndex = 2
-        '
-        'Com_fil_uno
-        '
-        Me.Com_fil_uno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Com_fil_uno.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Com_fil_uno.FormattingEnabled = True
-        Me.Com_fil_uno.Items.AddRange(New Object() {"Por Nivel", "Por Puesto"})
-        Me.Com_fil_uno.Location = New System.Drawing.Point(574, 13)
-        Me.Com_fil_uno.Name = "Com_fil_uno"
-        Me.Com_fil_uno.Size = New System.Drawing.Size(199, 26)
-        Me.Com_fil_uno.TabIndex = 1
         '
         'DataGridView1
         '
@@ -124,7 +50,7 @@ Partial Class Caracteristicas
         Me.DataGridView1.Location = New System.Drawing.Point(16, 81)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(1148, 547)
+        Me.DataGridView1.Size = New System.Drawing.Size(1148, 560)
         Me.DataGridView1.TabIndex = 0
         '
         'Label5
@@ -143,51 +69,120 @@ Partial Class Caracteristicas
         Me.Panel2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel2.Controls.Add(Me.DataGridView1)
+        Me.Panel2.Controls.Add(Me.TextBox1)
+        Me.Panel2.Controls.Add(Me.Button1)
         Me.Panel2.Controls.Add(Me.Label5)
         Me.Panel2.Controls.Add(Me.Button4)
-        Me.Panel2.Controls.Add(Me.DataGridView1)
-        Me.Panel2.Controls.Add(Me.Com_fil_uno)
-        Me.Panel2.Controls.Add(Me.Com_fil_dos)
-        Me.Panel2.Controls.Add(Me.PictureBox1)
-        Me.Panel2.Location = New System.Drawing.Point(16, 151)
+        Me.Panel2.Location = New System.Drawing.Point(16, 138)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1176, 631)
+        Me.Panel2.Size = New System.Drawing.Size(1176, 644)
         Me.Panel2.TabIndex = 4
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(516, 44)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(328, 31)
+        Me.TextBox1.TabIndex = 8
         '
         'Button1
         '
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.Location = New System.Drawing.Point(1029, 19)
+        Me.Button1.BackgroundImage = Global.Administracion_de_talento.My.Resources.Resources.icons8_waste_64
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(1074, 40)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(135, 37)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Actualizar puestos"
+        Me.Button1.Size = New System.Drawing.Size(42, 35)
+        Me.Button1.TabIndex = 7
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'Button4
         '
-        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.Location = New System.Drawing.Point(1029, 62)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(135, 37)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Actualizar relaciones"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button4.BackgroundImage = Global.Administracion_de_talento.My.Resources.Resources.icons8_plus_math_32
+        Me.Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Location = New System.Drawing.Point(1122, 40)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(42, 35)
+        Me.Button4.TabIndex = 3
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
         Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox1.Controls.Add(Me.btn_curso)
         Me.GroupBox1.Controls.Add(Me.btn_Competencias)
-        Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.btn_Habilidades)
-        Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.Btn_conocimiento)
         Me.GroupBox1.Location = New System.Drawing.Point(16, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1176, 133)
+        Me.GroupBox1.Size = New System.Drawing.Size(1176, 120)
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
+        '
+        'btn_curso
+        '
+        Me.btn_curso.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_curso.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_curso.Image = Global.Administracion_de_talento.My.Resources.Resources.skills__1_
+        Me.btn_curso.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.btn_curso.Location = New System.Drawing.Point(461, 30)
+        Me.btn_curso.Name = "btn_curso"
+        Me.btn_curso.Size = New System.Drawing.Size(143, 62)
+        Me.btn_curso.TabIndex = 7
+        Me.btn_curso.Text = "Curso"
+        Me.btn_curso.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.btn_curso.UseVisualStyleBackColor = True
+        Me.btn_curso.Visible = False
+        '
+        'btn_Competencias
+        '
+        Me.btn_Competencias.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_Competencias.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Competencias.Image = Global.Administracion_de_talento.My.Resources.Resources.skills
+        Me.btn_Competencias.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.btn_Competencias.Location = New System.Drawing.Point(16, 30)
+        Me.btn_Competencias.Name = "btn_Competencias"
+        Me.btn_Competencias.Size = New System.Drawing.Size(143, 62)
+        Me.btn_Competencias.TabIndex = 1
+        Me.btn_Competencias.Text = "Competencias"
+        Me.btn_Competencias.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.btn_Competencias.UseVisualStyleBackColor = True
+        '
+        'btn_Habilidades
+        '
+        Me.btn_Habilidades.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_Habilidades.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Habilidades.Image = Global.Administracion_de_talento.My.Resources.Resources.skills__1_
+        Me.btn_Habilidades.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.btn_Habilidades.Location = New System.Drawing.Point(314, 30)
+        Me.btn_Habilidades.Name = "btn_Habilidades"
+        Me.btn_Habilidades.Size = New System.Drawing.Size(143, 62)
+        Me.btn_Habilidades.TabIndex = 2
+        Me.btn_Habilidades.Text = "Responsabilidades"
+        Me.btn_Habilidades.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.btn_Habilidades.UseVisualStyleBackColor = True
+        '
+        'Btn_conocimiento
+        '
+        Me.Btn_conocimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Btn_conocimiento.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_conocimiento.Image = Global.Administracion_de_talento.My.Resources.Resources.thought
+        Me.Btn_conocimiento.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Btn_conocimiento.Location = New System.Drawing.Point(165, 30)
+        Me.Btn_conocimiento.Name = "Btn_conocimiento"
+        Me.Btn_conocimiento.Size = New System.Drawing.Size(143, 62)
+        Me.Btn_conocimiento.TabIndex = 3
+        Me.Btn_conocimiento.Text = "Conocimiento"
+        Me.Btn_conocimiento.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.Btn_conocimiento.UseVisualStyleBackColor = True
         '
         'Caracteristicas
         '
@@ -202,9 +197,9 @@ Partial Class Caracteristicas
         Me.Text = "Caracteristicas"
         Me.TransparencyKey = System.Drawing.SystemColors.Control
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -212,14 +207,12 @@ Partial Class Caracteristicas
     Friend WithEvents btn_Competencias As Button
     Friend WithEvents btn_Habilidades As Button
     Friend WithEvents Btn_conocimiento As Button
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button4 As Button
-    Friend WithEvents Com_fil_dos As ComboBox
-    Friend WithEvents Com_fil_uno As ComboBox
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label5 As Label
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents btn_curso As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents TextBox1 As TextBox
 End Class

@@ -225,7 +225,7 @@ Partial Class Prueba
         '
         'Button1
         '
-        Me.Button1.BackgroundImage = Global.HR_Job_Requirements.My.Resources.Resources.icons8_buscar_cliente_50
+        Me.Button1.BackgroundImage = Global.Administracion_de_talento.My.Resources.Resources.icons8_buscar_cliente_50
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat

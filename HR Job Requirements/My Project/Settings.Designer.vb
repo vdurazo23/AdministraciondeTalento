@@ -56,7 +56,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("10.251.10.21")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property MPSServer() As String
             Get
                 Return CType(Me("MPSServer"),String)
@@ -68,7 +68,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("sa")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property MPSUsuario() As String
             Get
                 Return CType(Me("MPSUsuario"),String)
@@ -80,7 +80,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("martinrea")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property MPSContraseña() As String
             Get
                 Return CType(Me("MPSContraseña"),String)
@@ -92,7 +92,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("MarsTest")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property MPSBD() As String
             Get
                 Return CType(Me("MPSBD"),String)
@@ -104,7 +104,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("3205")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
         Public Property CB_CODIGO() As Integer
             Get
                 Return CType(Me("CB_CODIGO"),Integer)
@@ -137,6 +137,316 @@ Namespace My
                 Me("Usuario") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property TRESSServer() As String
+            Get
+                Return CType(Me("TRESSServer"),String)
+            End Get
+            Set
+                Me("TRESSServer") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property TRESSUsuario() As String
+            Get
+                Return CType(Me("TRESSUsuario"),String)
+            End Get
+            Set
+                Me("TRESSUsuario") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property TRESSContraseña() As String
+            Get
+                Return CType(Me("TRESSContraseña"),String)
+            End Get
+            Set
+                Me("TRESSContraseña") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property TressBD() As String
+            Get
+                Return CType(Me("TressBD"),String)
+            End Get
+            Set
+                Me("TressBD") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Property Permisos() As Global.System.Data.DataTable
+            Get
+                Return CType(Me("Permisos"),Global.System.Data.DataTable)
+            End Get
+            Set
+                Me("Permisos") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property Id_user() As Integer
+            Get
+                Return CType(Me("Id_user"),Integer)
+            End Get
+            Set
+                Me("Id_user") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>  _
+        Public Property EmpleadosHijos() As Global.System.Data.DataTable
+            Get
+                Return CType(Me("EmpleadosHijos"),Global.System.Data.DataTable)
+            End Get
+            Set
+                Me("EmpleadosHijos") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Puesto() As String
+            Get
+                Return CType(Me("Puesto"),String)
+            End Get
+            Set
+                Me("Puesto") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("-1")>  _
+        Public Property Hab_req() As Integer
+            Get
+                Return CType(Me("Hab_req"),Integer)
+            End Get
+            Set
+                Me("Hab_req") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("-1")>  _
+        Public Property Hab_rel() As Integer
+            Get
+                Return CType(Me("Hab_rel"),Integer)
+            End Get
+            Set
+                Me("Hab_rel") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("-1")>  _
+        Public Property Hab_pond() As Integer
+            Get
+                Return CType(Me("Hab_pond"),Integer)
+            End Get
+            Set
+                Me("Hab_pond") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property Hab_nivreq() As Boolean
+            Get
+                Return CType(Me("Hab_nivreq"),Boolean)
+            End Get
+            Set
+                Me("Hab_nivreq") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("-1")>  _
+        Public Property Con_req() As Integer
+            Get
+                Return CType(Me("Con_req"),Integer)
+            End Get
+            Set
+                Me("Con_req") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("-1")>  _
+        Public Property Com_req() As Integer
+            Get
+                Return CType(Me("Com_req"),Integer)
+            End Get
+            Set
+                Me("Com_req") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("-1")>  _
+        Public Property Con_rel() As Integer
+            Get
+                Return CType(Me("Con_rel"),Integer)
+            End Get
+            Set
+                Me("Con_rel") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("-1")>  _
+        Public Property Com_rel() As Integer
+            Get
+                Return CType(Me("Com_rel"),Integer)
+            End Get
+            Set
+                Me("Com_rel") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("-1")>  _
+        Public Property Con_pond() As Integer
+            Get
+                Return CType(Me("Con_pond"),Integer)
+            End Get
+            Set
+                Me("Con_pond") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("-1")>  _
+        Public Property Com_pond() As Integer
+            Get
+                Return CType(Me("Com_pond"),Integer)
+            End Get
+            Set
+                Me("Com_pond") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property Con_nivreq() As Boolean
+            Get
+                Return CType(Me("Con_nivreq"),Boolean)
+            End Get
+            Set
+                Me("Con_nivreq") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property Com_nivreq() As Boolean
+            Get
+                Return CType(Me("Com_nivreq"),Boolean)
+            End Get
+            Set
+                Me("Com_nivreq") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("-1")>  _
+        Public Property Cur_req() As Integer
+            Get
+                Return CType(Me("Cur_req"),Integer)
+            End Get
+            Set
+                Me("Cur_req") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("-1")>  _
+        Public Property Cur_rel() As Integer
+            Get
+                Return CType(Me("Cur_rel"),Integer)
+            End Get
+            Set
+                Me("Cur_rel") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("-1")>  _
+        Public Property Cur_pond() As Integer
+            Get
+                Return CType(Me("Cur_pond"),Integer)
+            End Get
+            Set
+                Me("Cur_pond") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property Cur_nivreq() As Boolean
+            Get
+                Return CType(Me("Cur_nivreq"),Boolean)
+            End Get
+            Set
+                Me("Cur_nivreq") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property AlarmaIdp() As Boolean
+            Get
+                Return CType(Me("AlarmaIdp"),Boolean)
+            End Get
+            Set
+                Me("AlarmaIdp") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property MostrarIdp() As Boolean
+            Get
+                Return CType(Me("MostrarIdp"),Boolean)
+            End Get
+            Set
+                Me("MostrarIdp") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
@@ -148,9 +458,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.HR_Job_Requirements.My.MySettings
+        Friend ReadOnly Property Settings() As Global.Administracion_de_talento.My.MySettings
             Get
-                Return Global.HR_Job_Requirements.My.MySettings.Default
+                Return Global.Administracion_de_talento.My.MySettings.Default
             End Get
         End Property
     End Module

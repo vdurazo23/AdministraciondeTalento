@@ -114,7 +114,7 @@ Partial Class Competencias
         'Button1
         '
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackgroundImage = Global.HR_Job_Requirements.My.Resources.Resources.icons8_plus_math_32
+        Me.Button1.BackgroundImage = Global.Administracion_de_talento.My.Resources.Resources.icons8_plus_math_32
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Button1.Location = New System.Drawing.Point(717, 12)
         Me.Button1.Name = "Button1"

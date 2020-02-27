@@ -3,22 +3,45 @@
     Dim midataset As DataSet
     Private Sub Launcher_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+
+        If My.Settings.UPGRADEREQUIRED Then
+            My.Settings.Default.Upgrade()
+            My.Settings.UPGRADEREQUIRED = False
+            My.Settings.Save()
+        End If
+        Dim str() As String
+        str = GetCommandLineArgs()
+        If (UBound(str) >= 0) Then
+            If str(0) = "c" Or str(0) = "C" Or My.Settings.MPSServer = "" Or My.Settings.TRESSServer = "" Then
+                Dim conf As New Configuracion
+                If conf.ShowDialog() <> DialogResult.OK Then
+                    conf.Dispose()
+                    conf = Nothing
+                    Application.Exit()
+                    Exit Sub
+                End If
+                conf.Dispose()
+                conf = Nothing
+            End If
+        End If
+        If My.Settings.Permisos IsNot Nothing Then
+            My.Settings.Permisos.Clear()
+        End If
         Label3.Text = My.Application.Info.Version.ToString
         Label4.Text = My.Application.Info.Version.Revision.ToString
 
         contador = 0
         INFO_LABEL.Text = "    Actualizando puestos..."
         INFO_LABEL.Size = New Size(INFO_LABEL.Size.Height + 5, INFO_LABEL.Size.Width + 20)
-        Dim re = SqlQuery.actualizar_puestos()
-        If re = 1 Then
-            INFO_LABEL.ImageIndex = 1
-
+        If Debugger.IsAttached Then
+            Dim re = SqlQuery.actualizar_puestos()
+            If re = 1 Then
+                INFO_LABEL.ImageIndex = 1
+            End If
         End If
-
-
+        INFO_LABEL.ImageIndex = 1
         Timer1.Interval = 1000
         Timer1.Enabled = True
-
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -73,5 +96,15 @@
             MsgBox(ex.Message, MsgBoxStyle.Critical)
         End Try
     End Sub
+
+
+    Function GetCommandLineArgs() As String()
+        ' Declare variables.
+        Dim separators As String = " "
+        Dim commands As String = Microsoft.VisualBasic.Command()
+        Dim args() As String = commands.Split(separators.ToCharArray)
+        Return args
+    End Function
+
 
 End Class

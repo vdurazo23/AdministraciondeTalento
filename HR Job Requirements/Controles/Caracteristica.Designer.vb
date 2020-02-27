@@ -22,123 +22,171 @@ Partial Class Caracteristica
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.btn_adjunto = New System.Windows.Forms.Button()
+        Me.components = New System.ComponentModel.Container()
+        Me.lbl_caracteristica = New System.Windows.Forms.Label()
+        Me.lbl_requerido = New System.Windows.Forms.Label()
+        Me.lbl_niv_actual = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.btn_evidencia = New System.Windows.Forms.Button()
+        Me.lbl_niv_req = New System.Windows.Forms.Label()
+        Me.btn_adjunto = New System.Windows.Forms.Button()
+        Me.Pendiente = New System.Windows.Forms.PictureBox()
+        Me.lbl_porcentaje = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.TableLayoutPanel1.SuspendLayout()
+        CType(Me.Pendiente, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'lbl_caracteristica
         '
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(3, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(783, 47)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Caracteristica"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lbl_caracteristica.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_caracteristica.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_caracteristica.Location = New System.Drawing.Point(3, 0)
+        Me.lbl_caracteristica.Name = "lbl_caracteristica"
+        Me.lbl_caracteristica.Size = New System.Drawing.Size(609, 45)
+        Me.lbl_caracteristica.TabIndex = 0
+        Me.lbl_caracteristica.Text = "Caracteristica"
+        Me.lbl_caracteristica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label2
+        'lbl_requerido
         '
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label2.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(792, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(122, 47)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Requerido por:"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.lbl_requerido.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_requerido.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_requerido.Location = New System.Drawing.Point(618, 0)
+        Me.lbl_requerido.Name = "lbl_requerido"
+        Me.lbl_requerido.Size = New System.Drawing.Size(123, 45)
+        Me.lbl_requerido.TabIndex = 1
+        Me.lbl_requerido.Text = "Requerido por:"
+        Me.lbl_requerido.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label3
+        'lbl_niv_actual
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label3.Location = New System.Drawing.Point(920, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(68, 47)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Nivel requerido"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label4.Location = New System.Drawing.Point(994, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(68, 47)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Nivel actual"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Button2
-        '
-        Me.Button2.BackgroundImage = Global.HR_Job_Requirements.My.Resources.Resources.icons8_undefined_40
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Button2.Location = New System.Drawing.Point(1118, 3)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(44, 41)
-        Me.Button2.TabIndex = 6
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'btn_adjunto
-        '
-        Me.btn_adjunto.BackgroundImage = Global.HR_Job_Requirements.My.Resources.Resources.icons8_attach_32
-        Me.btn_adjunto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.btn_adjunto.Location = New System.Drawing.Point(1068, 3)
-        Me.btn_adjunto.Name = "btn_adjunto"
-        Me.btn_adjunto.Size = New System.Drawing.Size(44, 41)
-        Me.btn_adjunto.TabIndex = 3
-        Me.btn_adjunto.UseVisualStyleBackColor = True
+        Me.lbl_niv_actual.AutoSize = True
+        Me.lbl_niv_actual.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_niv_actual.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_niv_actual.Location = New System.Drawing.Point(815, 0)
+        Me.lbl_niv_actual.Name = "lbl_niv_actual"
+        Me.lbl_niv_actual.Size = New System.Drawing.Size(62, 45)
+        Me.lbl_niv_actual.TabIndex = 5
+        Me.lbl_niv_actual.Text = "Nivel actual"
+        Me.lbl_niv_actual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TableLayoutPanel1
         '
-        Me.TableLayoutPanel1.ColumnCount = 6
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.0!))
+        Me.TableLayoutPanel1.ColumnCount = 8
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.76438!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.2645!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.991576!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.991576!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.987967!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.Button2, 5, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label1, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label2, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label3, 2, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.Label4, 3, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.btn_adjunto, 4, 0)
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 61.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.btn_evidencia, 6, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.lbl_caracteristica, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.lbl_requerido, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.lbl_niv_req, 2, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.lbl_niv_actual, 3, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btn_adjunto, 5, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.Pendiente, 7, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.lbl_porcentaje, 4, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1170, 47)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1168, 45)
         Me.TableLayoutPanel1.TabIndex = 7
+        '
+        'btn_evidencia
+        '
+        Me.btn_evidencia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btn_evidencia.FlatAppearance.BorderSize = 0
+        Me.btn_evidencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_evidencia.Font = New System.Drawing.Font("Microsoft YaHei", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_evidencia.Location = New System.Drawing.Point(1030, 3)
+        Me.btn_evidencia.Name = "btn_evidencia"
+        Me.btn_evidencia.Size = New System.Drawing.Size(71, 39)
+        Me.btn_evidencia.TabIndex = 6
+        Me.btn_evidencia.Text = "Evidencia"
+        Me.btn_evidencia.UseVisualStyleBackColor = True
+        '
+        'lbl_niv_req
+        '
+        Me.lbl_niv_req.AutoSize = True
+        Me.lbl_niv_req.BackColor = System.Drawing.Color.Transparent
+        Me.lbl_niv_req.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_niv_req.Location = New System.Drawing.Point(747, 0)
+        Me.lbl_niv_req.Name = "lbl_niv_req"
+        Me.lbl_niv_req.Size = New System.Drawing.Size(62, 45)
+        Me.lbl_niv_req.TabIndex = 4
+        Me.lbl_niv_req.Text = "Nivel requerido"
+        Me.lbl_niv_req.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'btn_adjunto
+        '
+        Me.btn_adjunto.BackgroundImage = Global.Administracion_de_talento.My.Resources.Resources.icons8_attach_32
+        Me.btn_adjunto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btn_adjunto.FlatAppearance.BorderSize = 0
+        Me.btn_adjunto.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_adjunto.Location = New System.Drawing.Point(980, 3)
+        Me.btn_adjunto.Name = "btn_adjunto"
+        Me.btn_adjunto.Size = New System.Drawing.Size(44, 39)
+        Me.btn_adjunto.TabIndex = 3
+        Me.btn_adjunto.UseVisualStyleBackColor = True
+        '
+        'Pendiente
+        '
+        Me.Pendiente.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Pendiente.Image = Global.Administracion_de_talento.My.Resources.Resources.icons8_acerca_de_30
+        Me.Pendiente.Location = New System.Drawing.Point(1107, 3)
+        Me.Pendiente.Name = "Pendiente"
+        Me.Pendiente.Size = New System.Drawing.Size(58, 39)
+        Me.Pendiente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Pendiente.TabIndex = 7
+        Me.Pendiente.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.Pendiente, "El nivel actual puede cambiar, debido a que tiene evaluaciones pendientes por apr" &
+        "obar")
+        '
+        'lbl_porcentaje
+        '
+        Me.lbl_porcentaje.AutoSize = True
+        Me.lbl_porcentaje.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbl_porcentaje.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_porcentaje.Location = New System.Drawing.Point(883, 0)
+        Me.lbl_porcentaje.Name = "lbl_porcentaje"
+        Me.lbl_porcentaje.Size = New System.Drawing.Size(91, 45)
+        Me.lbl_porcentaje.TabIndex = 8
+        Me.lbl_porcentaje.Text = "Porcentaje"
+        Me.lbl_porcentaje.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.IsBalloon = True
         '
         'Caracteristica
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Name = "Caracteristica"
-        Me.Size = New System.Drawing.Size(1170, 47)
+        Me.Size = New System.Drawing.Size(1168, 45)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
+        CType(Me.Pendiente, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lbl_caracteristica As Label
+    Friend WithEvents lbl_requerido As Label
     Friend WithEvents btn_adjunto As Button
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents lbl_niv_req As Label
+    Friend WithEvents lbl_niv_actual As Label
+    Friend WithEvents btn_evidencia As Button
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents Pendiente As PictureBox
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents lbl_porcentaje As Label
 End Class

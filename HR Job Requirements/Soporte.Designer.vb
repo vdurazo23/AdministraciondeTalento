@@ -70,7 +70,7 @@ Partial Class Soporte
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.HR_Job_Requirements.My.Resources.Resources.help_support_22593
+        Me.PictureBox1.Image = Global.Administracion_de_talento.My.Resources.Resources.help_support_22593
         Me.PictureBox1.Location = New System.Drawing.Point(24, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(98, 90)
@@ -80,7 +80,7 @@ Partial Class Soporte
         '
         'btn_cancel
         '
-        Me.btn_cancel.BackgroundImage = Global.HR_Job_Requirements.My.Resources.Resources.if_Error_32686
+        Me.btn_cancel.BackgroundImage = Global.Administracion_de_talento.My.Resources.Resources.if_Error_32686
         Me.btn_cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btn_cancel.FlatAppearance.BorderSize = 0
         Me.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -93,7 +93,7 @@ Partial Class Soporte
         '
         'btn_acept
         '
-        Me.btn_acept.BackgroundImage = Global.HR_Job_Requirements.My.Resources.Resources.if_f_check_256_282474
+        Me.btn_acept.BackgroundImage = Global.Administracion_de_talento.My.Resources.Resources.if_f_check_256_282474
         Me.btn_acept.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.btn_acept.FlatAppearance.BorderSize = 0
         Me.btn_acept.FlatStyle = System.Windows.Forms.FlatStyle.Flat

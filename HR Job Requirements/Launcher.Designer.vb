@@ -107,7 +107,7 @@ Partial Class Launcher
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(502, 88)
         Me.Label6.TabIndex = 7
-        Me.Label6.Text = "HR JOB REQUIREMENTS"
+        Me.Label6.Text = "Administración de talento"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label7
@@ -136,7 +136,7 @@ Partial Class Launcher
         Me.INFO_LABEL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.INFO_LABEL.ImageIndex = 0
         Me.INFO_LABEL.ImageList = Me.ImageList1
-        Me.INFO_LABEL.Location = New System.Drawing.Point(479, 467)
+        Me.INFO_LABEL.Location = New System.Drawing.Point(478, 465)
         Me.INFO_LABEL.Name = "INFO_LABEL"
         Me.INFO_LABEL.Size = New System.Drawing.Size(80, 13)
         Me.INFO_LABEL.TabIndex = 10
@@ -151,7 +151,7 @@ Partial Class Launcher
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.HR_Job_Requirements.My.Resources.Resources.LogoSmall___copia__2_
+        Me.PictureBox1.Image = Global.Administracion_de_talento.My.Resources.Resources.LogoSmall___copia__2_
         Me.PictureBox1.Location = New System.Drawing.Point(3, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(121, 106)

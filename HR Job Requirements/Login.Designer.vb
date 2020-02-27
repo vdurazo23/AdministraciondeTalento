@@ -37,7 +37,7 @@ Partial Class Login
         'btnlogin
         '
         Me.btnlogin.BackColor = System.Drawing.SystemColors.Control
-        Me.btnlogin.Image = Global.HR_Job_Requirements.My.Resources.Resources.check_in
+        Me.btnlogin.Image = Global.Administracion_de_talento.My.Resources.Resources.check_in
         Me.btnlogin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnlogin.Location = New System.Drawing.Point(293, 139)
         Me.btnlogin.Name = "btnlogin"
@@ -61,7 +61,7 @@ Partial Class Login
         'btnCancelar
         '
         Me.btnCancelar.BackColor = System.Drawing.SystemColors.Control
-        Me.btnCancelar.Image = Global.HR_Job_Requirements.My.Resources.Resources.cancelar_login
+        Me.btnCancelar.Image = Global.Administracion_de_talento.My.Resources.Resources.cancelar_login
         Me.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnCancelar.Location = New System.Drawing.Point(371, 139)
         Me.btnCancelar.Name = "btnCancelar"
@@ -107,7 +107,7 @@ Partial Class Login
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.SystemColors.Control
-        Me.Button1.Image = Global.HR_Job_Requirements.My.Resources.Resources.check_in
+        Me.Button1.Image = Global.Administracion_de_talento.My.Resources.Resources.check_in
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.Location = New System.Drawing.Point(23, 139)
         Me.Button1.Name = "Button1"
@@ -121,7 +121,7 @@ Partial Class Login
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.HR_Job_Requirements.My.Resources.Resources.candado
+        Me.PictureBox1.Image = Global.Administracion_de_talento.My.Resources.Resources.candado
         Me.PictureBox1.Location = New System.Drawing.Point(23, 21)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(116, 108)

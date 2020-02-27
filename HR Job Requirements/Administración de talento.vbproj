@@ -1,0 +1,942 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE102F4F-B024-4E83-A93E-2E1A42AF2F15}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Administracion_de_talento.My.MyApplication</StartupObject>
+    <RootNamespace>Administracion_de_talento</RootNamespace>
+    <AssemblyName>Administración de talento</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>\\10.251.10.45\c%24\inetpub\wwwroot\HRJob\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://10.251.10.45/HRJob/</InstallUrl>
+    <ProductName>Administración de talento</ProductName>
+    <PublisherName>Martinrea</PublisherName>
+    <SuiteName>Administración de talento</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>AdministracionTalento.html</WebPage>
+    <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>15</ApplicationRevision>
+    <ApplicationVersion>1.0.2.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Administración de talento.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Administración de talento.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>DE7E207521D24E2149551E7C146201093BF034C3</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>HR Job Requirements_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hrjob2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.AcroPDFLib">
+      <HintPath>..\..\Diseñador_Formularios\Diseñador_Formularios\obj\x86\Debug\AxInterop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPGuiNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d4f4a0bd9c559145, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Programacion_troqueles\Programacion_troqueles\bin\Debug\DPFPGuiNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPShrNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d902fe275a8d6cf2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Programacion_troqueles\Programacion_troqueles\bin\Debug\DPFPShrNET.dll</HintPath>
+    </Reference>
+    <Reference Include="DPFPVerNET, Version=1.6.1.0, Culture=neutral, PublicKeyToken=4de0a9c4dcc83984, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Programacion_troqueles\Programacion_troqueles\bin\Debug\DPFPVerNET.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adjuntos.Designer.vb">
+      <DependentUpon>Adjuntos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Adjuntos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar caracteristica.Designer.vb">
+      <DependentUpon>Agregar caracteristica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar caracteristica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar curso.Designer.vb">
+      <DependentUpon>Agregar curso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar curso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_evaluacion.Designer.vb">
+      <DependentUpon>Agregar_evaluacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar_evaluacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_masivo.Designer.vb">
+      <DependentUpon>Agregar_masivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar_masivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_objetivo.Designer.vb">
+      <DependentUpon>Agregar_objetivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar_objetivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_periodo.Designer.vb">
+      <DependentUpon>Agregar_periodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar_periodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Aprobar.Designer.vb">
+      <DependentUpon>Aprobar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Aprobar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\AppData.vb" />
+    <Compile Include="Clases\SetDoubleBuffered.vb" />
+    <Compile Include="Comentario.Designer.vb">
+      <DependentUpon>Comentario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comentario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Competencias.Designer.vb">
+      <DependentUpon>Competencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Competencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion.Designer.vb">
+      <DependentUpon>Configuracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuraciones.Designer.vb">
+      <DependentUpon>Configuraciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuraciones_generales.Designer.vb">
+      <DependentUpon>Configuraciones_generales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones_generales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion_evaluacion.Designer.vb">
+      <DependentUpon>Configuracion_evaluacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion_evaluacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta.Designer.vb">
+      <DependentUpon>Consulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Caracteristica.Designer.vb">
+      <DependentUpon>Caracteristica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Caracteristica.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Caracteristicas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caracteristicas.Designer.vb">
+      <DependentUpon>Caracteristicas.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controles\Comparacion_control.Designer.vb">
+      <DependentUpon>Comparacion_control.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Comparacion_control.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Progress.Designer.vb">
+      <DependentUpon>Progress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Progress.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\Ticket.Designer.vb">
+      <DependentUpon>Ticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\Ticket.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\UserControl1.Designer.vb">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\UserControl1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cursos.Designer.vb">
+      <DependentUpon>Cursos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cursos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.vb">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Detalles.Designer.vb">
+      <DependentUpon>Detalles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Detalles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duplicado.Designer.vb">
+      <DependentUpon>Duplicado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Duplicado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evaluacion_detalles.Designer.vb">
+      <DependentUpon>Evaluacion_detalles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Evaluacion_detalles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IDP.Designer.vb">
+      <DependentUpon>IDP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IDP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Launcher.Designer.vb">
+      <DependentUpon>Launcher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Launcher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LimpiarTickets.Designer.vb">
+      <DependentUpon>LimpiarTickets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LimpiarTickets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista_cursos.Designer.vb">
+      <DependentUpon>Lista_cursos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lista_cursos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nivel_requerido.Designer.vb">
+      <DependentUpon>Nivel_requerido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Nivel_requerido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="no_empleado.Designer.vb">
+      <DependentUpon>no_empleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="no_empleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nuevo_objetivo.Designer.vb">
+      <DependentUpon>Nuevo_objetivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Nuevo_objetivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Objetivos.Designer.vb">
+      <DependentUpon>Objetivos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Objetivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Objetivos_acciones.Designer.vb">
+      <DependentUpon>Objetivos_acciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Objetivos_acciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Permiso.vb" />
+    <Compile Include="Permisos_form.Designer.vb">
+      <DependentUpon>Permisos_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Permisos_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PermisosPers.Designer.vb">
+      <DependentUpon>PermisosPers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PermisosPers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Organigrama.Designer.vb">
+      <DependentUpon>Organigrama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Organigrama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programar.Designer.vb">
+      <DependentUpon>Programar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Programar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Propiedades_caracteristica.Designer.vb">
+      <DependentUpon>Propiedades_caracteristica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Propiedades_caracteristica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prueba.Designer.vb">
+      <DependentUpon>Prueba.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prueba.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puesto.Designer.vb">
+      <DependentUpon>Puesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Puesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puni.Designer.vb">
+      <DependentUpon>Puni.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Puni.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relacion.Designer.vb">
+      <DependentUpon>Relacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relacion_curso.Designer.vb">
+      <DependentUpon>Relacion_curso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relacion_curso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte.Designer.vb">
+      <DependentUpon>Reporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionPuestosMultiples.Designer.vb">
+      <DependentUpon>SeleccionPuestosMultiples.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionPuestosMultiples.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solicitud_ticket.Designer.vb">
+      <DependentUpon>Solicitud_ticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Solicitud_ticket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Soporte.Designer.vb">
+      <DependentUpon>Soporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Soporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SqlQuery.vb" />
+    <Compile Include="Tickets.Designer.vb">
+      <DependentUpon>Tickets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_imagen.Designer.vb">
+      <DependentUpon>Visor_imagen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_imagen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visor_pdf.Designer.vb">
+      <DependentUpon>Visor_pdf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Visor_pdf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaPreviaImagen.Designer.vb">
+      <DependentUpon>VistaPreviaImagen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VistaPreviaImagen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vis_doc_online.Designer.vb">
+      <DependentUpon>Vis_doc_online.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vis_doc_online.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Adjuntos.resx">
+      <DependentUpon>Adjuntos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar caracteristica.resx">
+      <DependentUpon>Agregar caracteristica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar curso.resx">
+      <DependentUpon>Agregar curso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar_evaluacion.resx">
+      <DependentUpon>Agregar_evaluacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar_masivo.resx">
+      <DependentUpon>Agregar_masivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar_objetivo.resx">
+      <DependentUpon>Agregar_objetivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar_periodo.resx">
+      <DependentUpon>Agregar_periodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aprobar.resx">
+      <DependentUpon>Aprobar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comentario.resx">
+      <DependentUpon>Comentario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Competencias.resx">
+      <DependentUpon>Competencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion.resx">
+      <DependentUpon>Configuracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuraciones.resx">
+      <DependentUpon>Configuraciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuraciones_generales.resx">
+      <DependentUpon>Configuraciones_generales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion_evaluacion.resx">
+      <DependentUpon>Configuracion_evaluacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consulta.resx">
+      <DependentUpon>Consulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Caracteristica.resx">
+      <DependentUpon>Caracteristica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caracteristicas.resx">
+      <DependentUpon>Caracteristicas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Comparacion_control.resx">
+      <DependentUpon>Comparacion_control.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Progress.resx">
+      <DependentUpon>Progress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\Ticket.resx">
+      <DependentUpon>Ticket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controles\UserControl1.resx">
+      <DependentUpon>UserControl1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cursos.resx">
+      <DependentUpon>Cursos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detalles.resx">
+      <DependentUpon>Detalles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duplicado.resx">
+      <DependentUpon>Duplicado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Evaluacion_detalles.resx">
+      <DependentUpon>Evaluacion_detalles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IDP.resx">
+      <DependentUpon>IDP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Launcher.resx">
+      <DependentUpon>Launcher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LimpiarTickets.resx">
+      <DependentUpon>LimpiarTickets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista_cursos.resx">
+      <DependentUpon>Lista_cursos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nivel_requerido.resx">
+      <DependentUpon>Nivel_requerido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="no_empleado.resx">
+      <DependentUpon>no_empleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nuevo_objetivo.resx">
+      <DependentUpon>Nuevo_objetivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Objetivos.resx">
+      <DependentUpon>Objetivos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Objetivos_acciones.resx">
+      <DependentUpon>Objetivos_acciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Permisos_form.resx">
+      <DependentUpon>Permisos_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PermisosPers.resx">
+      <DependentUpon>PermisosPers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Organigrama.resx">
+      <DependentUpon>Organigrama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programar.resx">
+      <DependentUpon>Programar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Propiedades_caracteristica.resx">
+      <DependentUpon>Propiedades_caracteristica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prueba.resx">
+      <DependentUpon>Prueba.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puesto.resx">
+      <DependentUpon>Puesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puni.resx">
+      <DependentUpon>Puni.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relacion.resx">
+      <DependentUpon>Relacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relacion_curso.resx">
+      <DependentUpon>Relacion_curso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporte.resx">
+      <DependentUpon>Reporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionPuestosMultiples.resx">
+      <DependentUpon>SeleccionPuestosMultiples.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solicitud_ticket.resx">
+      <DependentUpon>Solicitud_ticket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Soporte.resx">
+      <DependentUpon>Soporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets.resx">
+      <DependentUpon>Tickets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_imagen.resx">
+      <DependentUpon>Visor_imagen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visor_pdf.resx">
+      <DependentUpon>Visor_pdf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaPreviaImagen.resx">
+      <DependentUpon>VistaPreviaImagen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vis_doc_online.resx">
+      <DependentUpon>Vis_doc_online.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HR Job Requirements_ClaveTemporal.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\icons8-plus-math-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoSmall - copia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-buscar-cliente-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_support_22593.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Error_32686.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_f-check_256_282474.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-filtrar-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter_4922.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\candado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon-icons.com_57997.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoSmall - copia %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-búsqueda-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOSEHIZO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-editar-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-undefined-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-attach-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-attach-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxDPFPCtlXLib">
+      <Guid>{B49E66FF-6927-4378-9685-937F14679ADD}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxSHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="DPFPCtlXLib">
+      <Guid>{B49E66FF-6927-4378-9685-937F14679ADD}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lazo-marcapáginas-64.png" />
+    <None Include="Resources\icons8-detalles-emergentes-64.png" />
+    <None Include="Resources\Notification2.png" />
+    <None Include="Resources\Notification.png" />
+    <None Include="Resources\icons8-más-30.png" />
+    <None Include="Resources\icons8-cursos-30.png" />
+    <None Include="Resources\icons8-help-24.png" />
+    <None Include="Resources\icons8-exportar-24.png" />
+    <None Include="Resources\icons8-dos-entradas-30.png" />
+    <None Include="Resources\icons8-salida-50.png" />
+    <None Include="Resources\icons8-metamorfosis-50.png" />
+    <None Include="Resources\icons8-dos-entradas-50.png" />
+    <None Include="Resources\icons8-cursos-50.png" />
+    <None Include="Resources\SinVistaPrevia.png" />
+    <None Include="Resources\na.png" />
+    <None Include="Resources\icons8-tarea-completada-64.png" />
+    <None Include="Resources\okk.png" />
+    <None Include="Resources\icons8-waste-64.png" />
+    <None Include="Resources\003.png" />
+    <None Include="Resources\05.png" />
+    <Content Include="hrjob2.ico" />
+    <None Include="Resources\1004.png" />
+    <None Include="Resources\1000.png" />
+    <None Include="Resources\1001.png" />
+    <None Include="Resources\1002.png" />
+    <None Include="Resources\1003.png" />
+    <None Include="Resources\10041.png" />
+    <None Include="Resources\cancelar_login1.png" />
+    <None Include="Resources\check in1.png" />
+    <None Include="Resources\door-exit.png" />
+    <None Include="Resources\icons8-apagar-40 %281%29.png" />
+    <None Include="Resources\icons8-apagar-40.png" />
+    <None Include="Resources\icons8-apagar-30 %281%29.png" />
+    <None Include="Resources\icons8-apagar-30.png" />
+    <None Include="Resources\icons8-apagar-24.png" />
+    <None Include="Resources\Escala.png" />
+    <None Include="Resources\icons8-abrir-en-popup-32.png" />
+    <None Include="Resources\icons8-abrir-en-popup-321.png" />
+    <None Include="Resources\icons8-acercar-26.png" />
+    <Content Include="Resources\icons8-bloquear-24.png" />
+    <None Include="Resources\icons8-bloquear-241.png" />
+    <None Include="Resources\icons8-acerca-de-30.png" />
+    <None Include="Resources\NoAplica.png" />
+    <None Include="Resources\thought.png" />
+    <None Include="Resources\skills.png" />
+    <None Include="Resources\skills %281%29.png" />
+    <None Include="Resources\icons8-doble-izquierda-48.png" />
+    <None Include="Resources\icons8-doble-derecha-48.png" />
+    <None Include="Resources\OnlineSupport_enline_3976.png" />
+    <None Include="Resources\organizationchart_116388.png" />
+    <None Include="Resources\settings-cogwheel-button_icon-icons.com_72559.png" />
+    <None Include="Resources\report_icon-icons.com_58842.png" />
+    <None Include="Resources\searchmagnifierinterfacesymbol1_79893.png" />
+    <None Include="Resources\university_cap_icon-icons.com_66109.png" />
+    <None Include="Resources\report256_24829.png" />
+    <None Include="Resources\4288584andbusinessfinancepersonalportfolioprofileresume-115772_115741.png" />
+    <None Include="Resources\4124854-collaboration-group-management-organization-structure-team_114115.png" />
+    <None Include="Resources\-school_90226.png" />
+    <None Include="Resources\Captura1.PNG" />
+    <None Include="Resources\Captura 0.PNG" />
+    <None Include="Resources\Captura4.PNG" />
+    <None Include="Resources\Captura3.PNG" />
+    <None Include="Resources\Captura2.PNG" />
+    <None Include="Resources\Captura11.PNG" />
+    <None Include="Resources\Captura 01.PNG" />
+    <Content Include="Resources\connect.png" />
+    <Content Include="Resources\disconnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Types">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

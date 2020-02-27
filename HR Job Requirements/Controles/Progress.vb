@@ -12,7 +12,10 @@ Public Class Progress
     Private Sub Progress_Paint(sender As Object, e As PaintEventArgs) Handles Me.Paint
         Try
             Dim di As Integer
-            Dim progressAngle = CSng(360 / 100 * percentage)
+            Dim progressAngle = CSng(360 / 100 * Valor)
+            If Valor = -1 Then
+                progressAngle = 0
+            End If
             Dim remainderAngle = 360 - progressAngle
             Dim g As Graphics = e.Graphics
             'create pens to use for the arcs
@@ -35,7 +38,11 @@ Public Class Progress
             'draw the text in the centre by working out how big it is and adjusting the co-ordinates accordingly
             Using fnt As New Font(Me.Font.FontFamily, 14)
                 'Dim text As String = percentage.ToString + "%"
+
                 Dim text As String = Valor.ToString + "%"
+                If Valor = -1 Then
+                    text = "N/A"
+                End If
                 Dim textSize = g.MeasureString(text, fnt)
                 Dim textPoint As New Point(CInt(1 + (Me.Width / 2) - (textSize.Width / 2)), CInt(1 + (Me.Height / 2) - (textSize.Height / 2)))
                 'now we have all the values draw the text
